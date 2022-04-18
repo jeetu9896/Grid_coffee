@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Grid Coffie</title>
+    <style>
+        body {
+            background-color: rgb(244, 241, 238);
+        }
+
+        .main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 80%;
+            gap: 10px;
+            margin: auto;
+        }
+
+        .box {
+            margin: 10px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .upper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .upper span {
+            font-size: 20px;
+            font-weight: bolder;
+        }
+
+        .upper span:last-child {
+            color: #b78834;
+        }
+
+        .lower {
+            color: gray;
+            font: 1em sans-serif;
+            margin-top: 10px;
+        }
+
+        @media all and (max-width: 700px) {
+            .main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            .main {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <div class="upper">
+                <span>Cappuccino</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Americano</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Espresso</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Macchiato</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Moch</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Coffee Latte</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Piccolo Latte</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Ristetto</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+        <div class="box">
+            <div class="upper">
+                <span>Affogato</span>
+                <span>$49</span>
+            </div>
+            <div class="lower">
+                Usage of the internet is becoming more common due to rapid advance.
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
